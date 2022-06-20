@@ -6,10 +6,10 @@ eval_gemfile 'Gemfile-rspec-dependencies'
 
 gem 'yard', '~> 0.9.24', require: false
 
-group :documentation do
+group :development, :test do
   gem 'github-markup', '~> 3.0.3'
   gem 'redcarpet', '~> 3.5.1', platforms: [:ruby]
-  gem 'relish', '~> 0.7.1'
+  gem 'relish', '~> 4.0.1'
 end
 
 gem 'rake', '> 12'
